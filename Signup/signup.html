@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>Sign Up-RADForums</title>
+        <script src="https://kit.fontawesome.com/6d93c457af.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="signup.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col" id="left" style="float:left; background:white; opacity:0.7;">
+                <h1>RAD</h1>
+                <div id="left-text" align="left">
+                    <h1>Welcome to RADForums</h1>
+                    <h3>Your classmates are closer than you think</h3>
+                    <p>Join the community and gain access to hundreds of files and resource to help you gain an edge against the competition</p><br><br>
+                    <p id="then">Create a new account. Its quick and easy</p>
+                </div>
+            </div>
+            <div class="col" id="right" style="float:right; background:coral; opacity:0.9;">
+                <h1 id="signup">Sign Up</h1>
+                <div class="signup-box">
+                    <form>
+                        <h3>Personal Details</h3>
+                        <div class="textbox">
+                                <i class="fas fa-user-edit"></i>
+                                <input type="text" placeholder="Enter first name" name="fname" required />
+                        </div>
+                        <div class="textbox">
+                                <i class="fas fa-user-edit"></i>
+                                <input type="text" placeholder="Enter last name" name="lname" required />
+                        </div>
+                        <div class="textbox">
+                                <i class="fa fa-user"></i>
+                                <input type="text" placeholder="Choose your username" name="username" required />
+                        </div><br>
+                        <div class="textbox">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Enter Password" name="psw" required />
+                        </div>
+                        <div class="textbox">
+                                <i class="fas fa-lock"></i>
+                                <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+                        </div>
+
+                        <h3 style="margin-bottom:0">University Details</h3>
+                            <div class="select">
+                                <p>Name</p>
+                                <select>
+                                    <option value="PES">PES University</option>
+                                    <option value="RV">RVCE</option>
+                                </select>        
+                            </div>
+                            <div class="select">
+                                <p>Branch</p>
+                                <select>
+                                    <option value="CSE">CSE</option>
+                                    <option value="ECE">ECE</option>
+                                    <option value="MECH">Mechanical</option>
+                                    <option value="EEE">Electrical</option>
+                                    <option value="BT">Biotechnology</option><
+                                </select>
+                            </div>
+                            <div class="select">
+                                <p>Graduating Year</p>
+                                <select size="1" name="gyear">
+                                    <option value="2020">2020</option>
+                                    <option value="2021">2021</option>
+                                    <option value="2022">2022</option>
+                                    <option value="2023">2023</option>        
+                                </select>
+                            </div>
+                        <fieldset>
+                            <legend>Validation Info</legend>
+                            <div class="textbox" id="email" style="margin-bottom:15px;">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" placeholder="Email" required />
+                                <span class="tick"></span>
+                            </div>
+                            <div class="textbox">
+                                <i class="fas fa-id-card"></i>
+                                <input type="SRN" placeholder="SRN" required />
+                                <span class="tick"></span>        
+                            </div>
+                        </fieldset>
+                        <p style="font-size:14px;">By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
+                        <input class="button" type="submit" name="Signup" value="Create account">
+
+                    </form>
+                    <!--<i class="fa fa-user"></i>
+                    <i class="fa fa-lock"></i>-->
+                    <p>Already have an account? <a href="login.html">Sign In</a></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
