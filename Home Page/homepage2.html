@@ -51,7 +51,7 @@
                         </div>
                         <div id="username">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-primary">Username</button>
+                                <button type="button" id="sb-user" class="btn btn-primary">Username</button>
                                 <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                   <span class="sr-only">Toggle Dropdown</span>
                                 </button>
@@ -60,7 +60,7 @@
                                   <a class="dropdown-item" href="#">Followed Content</a>
                                   <a class="dropdown-item" href="#">Settings</a>
                                   <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" href="#">Logout</a>
+                                  <a class="dropdown-item" id="logout" href="#">Logout</a>
                                 </div>
                             </div>
                         </div>            
@@ -200,6 +200,37 @@
                 </div>
             </div>
         </div>
+               <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+                    
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCQ2E0UUN0VHrsDRsIkRa7b5dnsomqaxWg",
+                authDomain: "radforums-420ez.firebaseapp.com",
+                databaseURL: "https://radforums-420ez.firebaseio.com",
+                projectId: "radforums-420ez",
+                storageBucket: "radforums-420ez.appspot.com",
+                messagingSenderId: "308327911724",
+                appId: "1:308327911724:web:4c2c2ca9a2b2574a985c89",
+                measurementId: "G-WDQMS6T904"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+
+            //make auth and firestore references
+            const auth=firebase.auth();
+            const db=firebase.firestore();
+
+        </script>
+        <script src="home-auth.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
