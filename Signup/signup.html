@@ -18,40 +18,40 @@
             <div class="col" id="right" style="float:right; background:coral; opacity:0.9;">
                 <h1 id="signup">Sign Up</h1>
                 <div class="signup-box">
-                    <form>
+                    <form id="signup-form">
                         <h3>Personal Details</h3>
                         <div class="textbox">
                                 <i class="fas fa-user-edit"></i>
-                                <input type="text" placeholder="Enter first name" name="fname" required />
+                                <input type="text" id="fname" placeholder="Enter first name" name="fname" required />
                         </div>
                         <div class="textbox">
                                 <i class="fas fa-user-edit"></i>
-                                <input type="text" placeholder="Enter last name" name="lname" required />
+                                <input type="text" id="lname" placeholder="Enter last name" name="lname" required />
                         </div>
                         <div class="textbox">
                                 <i class="fa fa-user"></i>
-                                <input type="text" placeholder="Choose your username" name="username" required />
+                                <input type="text" id="uname" placeholder="Choose your username" name="username" required />
                         </div><br>
                         <div class="textbox">
                                 <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Enter Password" name="psw" required />
+                                <input type="password" id="pword" placeholder="Enter Password" name="psw" required />
                         </div>
                         <div class="textbox">
                                 <i class="fas fa-lock"></i>
-                                <input type="password" placeholder="Repeat Password" name="psw-repeat" required />
+                                <input type="password" id="pword2" placeholder="Repeat Password" name="psw-repeat" required />
                         </div>
 
                         <h3 style="margin-bottom:0">University Details</h3>
                             <div class="select">
                                 <p>Name</p>
-                                <select>
+                                <select id="uni">
                                     <option value="PES">PES University</option>
                                     <option value="RV">RVCE</option>
                                 </select>        
                             </div>
                             <div class="select">
                                 <p>Branch</p>
-                                <select>
+                                <select id="branch">
                                     <option value="CSE">CSE</option>
                                     <option value="ECE">ECE</option>
                                     <option value="MECH">Mechanical</option>
@@ -61,7 +61,7 @@
                             </div>
                             <div class="select">
                                 <p>Graduating Year</p>
-                                <select size="1" name="gyear">
+                                <select size="1" id="gyear" name="gyear">
                                     <option value="2020">2020</option>
                                     <option value="2021">2021</option>
                                     <option value="2022">2022</option>
@@ -72,12 +72,12 @@
                             <legend>Validation Info</legend>
                             <div class="textbox" id="email" style="margin-bottom:15px;">
                                 <i class="fas fa-envelope"></i>
-                                <input type="email" placeholder="Email" required />
+                                <input type="email" id="email" placeholder="Email" required />
                                 <span class="tick"></span>
                             </div>
                             <div class="textbox">
                                 <i class="fas fa-id-card"></i>
-                                <input type="SRN" placeholder="SRN" required />
+                                <input type="SRN" id="srn" placeholder="SRN" required />
                                 <span class="tick"></span>        
                             </div>
                         </fieldset>
@@ -87,9 +87,38 @@
                     </form>
                     <!--<i class="fa fa-user"></i>
                     <i class="fa fa-lock"></i>-->
-                    <p>Already have an account? <a href="login.html">Sign In</a></p>
+                    <p>Already have an account? <a href="../Login Page/login.html">Sign In</a></p>
                 </div>
             </div>
         </div>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+                    
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyCQ2E0UUN0VHrsDRsIkRa7b5dnsomqaxWg",
+                authDomain: "radforums-420ez.firebaseapp.com",
+                databaseURL: "https://radforums-420ez.firebaseio.com",
+                projectId: "radforums-420ez",
+                storageBucket: "radforums-420ez.appspot.com",
+                messagingSenderId: "308327911724",
+                appId: "1:308327911724:web:4c2c2ca9a2b2574a985c89",
+                measurementId: "G-WDQMS6T904"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            firebase.analytics();
+
+            //make auth and firestore references
+            const auth=firebase.auth();
+            const db=firebase.firestore();
+        </script>
+        <script src="signup-auth.js"></script>
     </body>
 </html>
