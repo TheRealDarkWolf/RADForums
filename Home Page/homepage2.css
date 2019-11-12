@@ -1,5 +1,6 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import url('https://fonts.googleapis.com/css?family=Orbitron:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap');
 
 colorcode{
     color:#e5faf8;
@@ -12,6 +13,7 @@ body,html{
     min-height:100%;
     padding:0;
     margin:0;
+    /*font-family: 'Montserrat';*/
 }
 
 body{
@@ -222,6 +224,9 @@ ul .nav-op{
 
 #rec-upload > h3, #gd-upload > h3{
     margin:0px;
+    background-color:#283655;
+    color:#d0e1f9;
+    margin-bottom:3px;
     border-bottom:1px solid black;
     position:relative;
     width:50vw;
@@ -252,6 +257,8 @@ ul .nav-op{
     border-bottom:1px solid black;
     margin:0px;
     font-size:20px;
+    background-color:#d0e1f9;
+    color:#283655;
 }
 
 #upload-files{
@@ -264,22 +271,29 @@ ul .nav-op{
 
 #upload-files h3{
     text-align:center;
-    font-family:sans-serif;
+    font-family:'Montserrat';
     font-size:22px;
     padding:10px 0;
 }
 
 #upload-files .button{
-    width: 80%;
-    background: limegreen;
-    font-family: sans-serif;
-    color: black;
-    font-size: 33px;
-    cursor: pointer;
-    position: relative;
-    margin:30px;
-    border-radius:10px;
+    border:none;
+    margin-top:30px;
+    border-radius:2px;
+    font-family:'Montserrat';
+    font-weight:600;
+    font-size:30px;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:2px;
+    background-color:#3BB143;
+    transition:all 150ms linear;
 }
+#upload-files .button:hover{
+    box-shadow:2px 2px 2px #bbb;
+    font-size:31px;
+}
+
 
 #gd-upload .uploads{
     position:relative;
@@ -311,6 +325,8 @@ ul .nav-op{
     margin:0px;
     font-size:20px;
     border-bottom: 1px solid black;
+    background-color:#d0e1f9;
+    color:#283655;
 }
 #forum-stat{
     float:right;
