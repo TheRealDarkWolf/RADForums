@@ -1,3 +1,5 @@
+//logout,login and Change username of the search bar
+
 const logout=document.querySelector('#logout');
 var id;
 logout.addEventListener('click', (e) => {
@@ -6,7 +8,6 @@ logout.addEventListener('click', (e) => {
         console.log('user signed out');
     })
 });
-
 
 auth.onAuthStateChanged(user =>{
     if(user){
@@ -33,4 +34,3 @@ auth.onAuthStateChanged(user =>{
         setTimeout(function(){ window.location.assign("../Login Page/login.html") },2000);
     }
 });
- 

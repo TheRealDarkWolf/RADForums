@@ -14,7 +14,8 @@ signupForm.addEventListener('submit', (e) => {
         branch: f.options[f.selectedIndex].text,
         gyear: g.options[g.selectedIndex].text,
         email: signupForm.email.value,
-        srn: signupForm.srn.value
+        srn: signupForm.srn.value,
+        status:"offline"
     });
 
     const email= signupForm['email'].value;

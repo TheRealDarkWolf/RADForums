@@ -1,5 +1,6 @@
 // signin
 const loginForm= document.querySelector('#LoginForm');
+var id;
 loginForm.addEventListener('submit', (e) =>{
     e.preventDefault();
     const email= loginForm['email'].value;
@@ -19,13 +20,15 @@ loginForm.addEventListener('submit', (e) =>{
 })
 
 //on login only take in email and cross check later? or store everything in json stringify
+/*
 function renderUser(doc){
     const user=document.querySelector('#sb-user');
     user.textContent=doc.data().username;
+    id=doc.id;
 }
 //var user-email=window.localStorage.getItem('user')
  db.collection('users').where('email','==', window.localStorage.getItem('user')).get().then(snapshot =>{
     snapshot.docs.forEach(doc=>{
         renderUser(doc);
     });
-}); 
+}); */
