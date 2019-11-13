@@ -4,14 +4,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">        
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>        
-
-        <title>File Page-RadForums</title>
-        <link rel="stylesheet" href="filepage.css">
+        <title>Home-RadForums</title>
+        <link rel="stylesheet" href="template.css">
         <link rel="icon" href="../images/logotitle.png" type="image/x-icon">
     </head>
     <body>
@@ -27,7 +21,7 @@
                                         <li><a href="../Subject Page/02.html">UE18CS204</a></li>
                                         <li><a href="../Subject Page/03.html">UE18CS203</a></li>
                                         <li><a href="../Subject Page/04.html">UE18CS202</a></li>
-                                        <li><a href="../Subject Page/05.html">UE18CS201</a></li>                                
+                                        <li><a href="../Subject Page/05.html">UE18CS201</a></li>
                                 </ul>
                             </li>
                             <li class="nav-op"><a>ACTIVITY</a>
@@ -79,90 +73,35 @@
                                 <i class="fa fa-search"></i>
                             </a>
                         </div>
-                
-                
                 </div>
                 <div class="container">
-                        <div id="div1">
-                            <h1><center>Discrete Mathematics And Logic(UE18CS205)</center></h1>
-                            <h2>Unit 2-Sets, Relations and Functions </h2>
-                            <div id="align">
-                            <pre> <h4><i class='far fa-thumbs-up' onclick="up()" ></i>   <i class='far fa-thumbs-down' onclick="down()" > </i>   <i  class='far fa-comment' onclick="comment()" ></i></h4></pre>               
-                            <b id="count">0 score</b> <b id="c">0 comments</b>
-                            </div>
-                            <h6>Uploaded By S.Krishna <i class='fas fa-check-circle'></i>  <b id="changedate"></b>  </h6>
-                        </div>
-                        <br>
-                        <br><br><br>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-sm-8" >                   
-                                    <div id="area2">
-                                        <pre><h4> <i class='fas fa-plus-circle'></i> <i class='fas fa-minus-circle'></i>                <i class="fa fa-chevron-circle-left"></i> <input type="text" style="height: 20px; width:50px"> <i class="fa fa-chevron-circle-right"></i></h4></pre> 
-                                    </div>
-                                    <div id="area1"></div>
-                                        <br>
-                                        <br>
-                                        <br>
-                                        <h2>COMMENTS</h2>
-                                        <hr style="border-width: 2px;border-color:black">
-                                        <button id="show">ADD A COMMENT</button>
-                                        <br><br>
-                                        <div class="form-group" id="comm">
-                                            <pre><h4> <span class="dot" id="dot"></span> <textarea class="form-control" rows="4" id="comment" name="text" style=" border-color:black;" placeholder="Add Your Comment Or Ask A Question..."></textarea></h4></pre> 
-                                            <button id="bs" onclick="cadd()">POST</button>
-                                        </div>
-                                        <br><br>
-                                        <div id="od">
-                                        </div>  
-                                        <br><br>                      
-                                </div>                
-                                <div class="col-sm-4">
-                                    <div id="upload">
-                                        <br>
-                                        <center><p>ADD A NEW DOCUMENT TO THE COURSE DRIVE</p></center>
-                                        <br>
-                                        <br>
-                                        <center><button>+  UPLOAD</button></center>
-                                        <br><br><br>
-                                    </div>
-                                    <br>
-                                    <div id="thread">
-                                    <center> <h3> START A THREAD ON DISCRETE MATHEMATICS AND LOGIC</h3></center>
-                                        <center><textarea class="form-control" rows="2"  name="text" id="field" placeholder="Start thread..." style="border-color: black"></textarea></center>
-                                        <center><button type="submit" onclick="thread()">POST</button></center>
-                                    </div>
-                                    <br>
-                                    <center><button id="download"><i class="fa fa-download"> DOWNLOAD</i></button></center>
-                                </div>
-                            </div>
-                        </div>            
+                    
                 </div>
                 <div id="bottompage">
-                        <p>Switch theme:</p>
-                        <div class="redirects" id="icons">
-                            <a href=""><i class="fa fa-facebook-f fa-2x"></i></a>
-                            <a href=""><i class="fa fa-github fa-2x"></i></a>
-                            <a href=""><i class="fa fa-envelope fa-2x"></i></a>
-                        </div>
-                        <div class="redirects" id="tc">
-                            <a href="">Terms & Conditions</a>
-                            <a href="">Privacy Policy</a>
-                        </div>
+                    <p>Switch theme:</p>
+                    <div class="redirects" id="icons">
+                        <a href=""><i class="fa fa-facebook-f fa-2x"></i></a>
+                        <a href=""><i class="fa fa-github fa-2x"></i></a>
+                        <a href=""><i class="fa fa-envelope fa-2x"></i></a>
+                    </div>
+                    <div class="redirects" id="tc">
+                        <a href="">Terms & Conditions</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
                 </div>
-            </div> 
+            </div>
         </div>
-        <!-- The core Firebase JS SDK is always required and must be listed first -->
+               <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
-    
+
         <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
         <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
-                        
+                    
         <script>
-                // Your web app's Firebase configuration
+            // Your web app's Firebase configuration
             var firebaseConfig = {
                 apiKey: "AIzaSyCQ2E0UUN0VHrsDRsIkRa7b5dnsomqaxWg",
                 authDomain: "radforums-420ez.firebaseapp.com",
@@ -176,13 +115,13 @@
             // Initialize Firebase
             firebase.initializeApp(firebaseConfig);
             firebase.analytics();
-    
+
             //make auth and firestore references
             const auth=firebase.auth();
             const db=firebase.firestore();
 
         </script>
-        <script src="filepage.js"></script>
+        <script src="template.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

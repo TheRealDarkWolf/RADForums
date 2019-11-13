@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <style>
+            #seen{
+                text-align:center;
+            }
+            
+
+            #protable{
+                width:60%;
+                margin:30px;
+                border:bordered;
+                border-radius: 10px;
+                
+                
+            }
+
+            .profile:hover{
+                color:brown;
+            }
+
+            .profile{
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: bold;
+
+            }
+
+            tr td a:hover{
+                
+                cursor:pointer;
+            }
+            .sub:hover{
+                color:blue;
+                text-decoration: underline;
+            }
+            thead{
+                border-color: brown;
+                border-style: solid;
+            }
+            tbody{
+                border-color: coral;
+                border-style: solid;
+            }
+            .container{
+                min-height:100%;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="homepage2.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    </head> 
+        <link rel="icon" href="images/logotitle.png" type="image/icon">
+        <title>User Profile- RADForums</title>
+    </head>
+    <body>
+        <div id="opacity">
+            <div id="homepage">
+                    <div id="toppage">
+                        <img id="logo" src="./images/logo2.png">
+                        <div id="navbar">
+                            <ul>
+                                <li class="nav-op"><a>SUBJECT</a>
+                                    <ul>
+                                            <li><a href="../Subject Page/01.html">UE18CS205</a></li>
+                                            <li><a href="../Subject Page/02.html">UE18CS204</a></li>
+                                            <li><a href="../Subject Page/03.html">UE18CS203</a></li>
+                                            <li><a href="../Subject Page/04.html">UE18CS202</a></li>
+                                            <li><a href="../Subject Page/05.html">UE18CS201</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-op"><a>ACTIVITY</a>
+                                    <ul>
+                                        <li><a>CALENDAR</a></li>
+                                        <li><a href="../Group Info/groupinfo.html">GROUP INFO</a></li>
+                                        <li><a href="activity_page.html">MY ACTIVITY</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-op"><a>MORE</a>
+                                    <ul>
+                                        <li><a href="About Us/aboutus.html">ABOUT US</a></li>
+                                        <li><a>REPORT A BUG</a></li>
+                                        <li><a>FEEDBACK FORM</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-op"><a>OTHER FORUMS</a>
+                                    <ul>
+                                        <li><a>GD FORUMS</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="user-bar">
+                            <div class="user">
+                                <div id="profile-pic">
+                                    <img src="" id="picture">
+                                </div>
+                                <div id="username">
+                                    <div class="btn-group">
+                                        <button type="button" id="sb-user" class="btn btn-primary">Username</button>
+                                        <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">                                      
+                                        <a class="dropdown-item" href="userprofile.html">My Profile</a>
+                                        <a class="dropdown-item" href="#">Followed Content</a>
+                                        <a class="dropdown-item" href="#">Settings</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" id="logout" href="#">Logout</a>
+                                        </div>
+                                    </div>
+                                </div>            
+                            </div>
+                            <div id="search-bar">
+                                <input class="search-txt" type="text" name="" placeholder="Type to search">
+                                <a class="search-btn" href="#">
+                                    <i class="fa fa-search"></i>
+                                </a>
+                            </div>
+                        </div>
+    
+        <div class="container">
+
+
+        <div class="pro">
+            <center>
+        <table id="protable">
+                <tbody>
+                  <tr>
+                    <th class="profile">Full Name</th>
+                    <th class="profile">Krishna S</th>
+                  </tr>
+                  <tr>
+                    <td class="profile">College/University</td>
+                    <td class="profile">PES University</td>
+                  </tr>
+                  <tr>
+                        <td class="profile">Branch</td>
+                        <td class="profile">CSE</td>
+                  </tr>
+                  <tr>
+                        <td class="profile">Batch</td>
+                        <td class="profile">2018-2022</td>
+                  </tr>
+                </tbody>
+              </table>
+            </center>
+            </div>
+           
+
+        </div>
+
+        <div><h3><center><b>User Activity</b></center></h3></div>
+        
+        <div class="container">                           
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>File</th>
+                      <th>Course</th>
+                      <th>Date</th>
+                      <th>Value</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="sub"><a >Javascript.ppt</a></td>
+                      <td>UE18CS204</td>
+                      <td>12-9-2019 20:04</td>
+                      <td>Value=17<br>4 comments</td>
+                    </tr>
+                    <tr>
+                        <td class="sub"><a >Unit-2Formulae.pdf</a></td>
+                        <td>UE18CS203</td>
+                        <td>19-9-2019 21:04</td>
+                        <td>Value=9<br>1 comment</td>
+                    </tr>
+                    <tr>
+                        <td class="sub"><a >SetTheory.ppt</a></td>
+                        <td>UE18CS205</td>
+                        <td>19-9-2019 9:04</td>
+                        <td>Value=8<br>1 comments</td>
+                    </tr>
+                    <tr>
+                            <td class="sub"><a >CSS-Selectors.pdf</a></td>
+                            <td>UE18CS204</td>
+                            <td>20-9-2019 19:04</td>
+                            <td>Value=15<br>5 comments</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div id="seen" style="text-align: right;"></div>
+        <script>
+            
+                var d= new Date();
+                var minutes=d.getMinutes();
+                var date=d.getDate();
+                var hours=d.getHours();
+                var month=d.getMonth();
+                var year=d.getFullYear();
+                document.getElementById("seen").innerHTML ="Last Seen at "+hours+":"+minutes+" , "+date+"-"+month+"-"+year;
+        </script>
+</div>
+<div id="bottompage">
+        <p>Switch theme:</p>
+        <div class="redirects" id="icons">
+            <a href=""><i class="fa fa-facebook-f fa-2x"></i></a>
+            <a href=""><i class="fa fa-github fa-2x"></i></a>
+            <a href=""><i class="fa fa-envelope fa-2x"></i></a>
+        </div>
+        <div class="redirects" id="tc">
+            <a href="">Terms & Conditions</a>
+            <a href="">Privacy Policy</a>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
