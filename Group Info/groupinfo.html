@@ -7,95 +7,99 @@
         <!--<script src="https://kit.fontawesome.com/6d93c457af.js" crossorigin="anonymous"></script>-->
         <title>Group Info -RADForums</title>
         <link rel="stylesheet" href="groupinfo.css">
+        <link rel="icon" href="../images/logotitle.png" type="image/x-icon">
     </head>
     <body>
-        <div id="homepage">
-            <div id="toppage">
-                <img id="logo" src="logo2.png">
-                <div id="navbar">
-                    <ul>
-                        <li class="nav-op"><a>SUBJECT</a>
-                            <ul>
-                                <li><a href="../Subject Page/subject-page.html">UE18CS205</a></li>
-                                <li><a>SUBJECT 2</a></li>
-                                <li><a>SUBJECT 3</a></li>
-                                <li><a>SUBJECT 4</a></li>
-                                <li><a>SUBJECT 5</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-op"><a>ACTIVITY</a>
-                            <ul>
-                                <li><a>CALENDAR</a></li>
-                                <li><a href="groupinfo.html">GROUP INFO</a></li>
-                                <li><a>MY ACTIVITY</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-op"><a>MORE</a>
-                            <ul>
-                                <li><a>CONTACT US</a></li>
-                                <li><a>REPORT A BUG</a></li>
-                                <li><a>FEEDBACK FORM</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-op"><a>OTHER FORUMS</a>
-                            <ul>
-                                <li><a>GD FORUMS</a></li>
-                            </ul>
-                        </li>
+        <div id="opacity">
+            <div id="homepage">
+                <div id="toppage">
+                    <img id="logo" src="../images/logo2.png">
+                    <div id="navbar">
+                        <ul>
+                            <li class="nav-op"><a>SUBJECT</a>
+                                <ul>
+                                    <li><a href="../Subject Page/subject-page.html">UE18CS205</a></li>
+                                    <li><a>UE18CS204</a></li>
+                                    <li><a>UE18CS203</a></li>
+                                    <li><a>UE18CS202</a></li>
+                                    <li><a>UE18CS201</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-op"><a>ACTIVITY</a>
+                                <ul>
+                                    <li><a>CALENDAR</a></li>
+                                    <li><a href="groupinfo.html">GROUP INFO</a></li>
+                                    <li><a>MY ACTIVITY</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-op"><a>MORE</a>
+                                <ul>
+                                    <li><a>CONTACT US</a></li>
+                                    <li><a>REPORT A BUG</a></li>
+                                    <li><a>FEEDBACK FORM</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-op"><a>OTHER FORUMS</a>
+                                <ul>
+                                    <li><a>GD FORUMS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="user-bar">
+                    <div class="user">
+                        <div id="profile-pic">
+                                <img src="" id="picture">
+                        </div>
+                        <div id="username">
+                            <div class="btn-group">
+                                <button type="button" id="sb-user" class="btn btn-primary">Username</button>
+                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="sr-only">Toggle Dropdown</span>
+                                </button>
+                                <div class="dropdown-menu">                                      <a class="dropdown-item" href="#">My Profile</a>
+                                <a class="dropdown-item" href="#">Followed Content</a>
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" id="logout" href="#">Logout</a>
+                                </div>
+                            </div>
+                        </div>            
+                    </div>
+                    <div id="search-bar">
+                        <input class="search-txt" type="text" name="" placeholder="Type to search">
+                        <a class="search-btn" href="#">
+                            <i class="fa fa-search"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="container">
+                    <h2>Members List</h2>
+                    <div id="heading">
+                        <span>Username</span>
+                        <span>Name</span>
+                        <span>Email</span>
+                        <span>Status</span>
+                    </div>
+                    <ul id="member-list" class="list-group">
                     </ul>
                 </div>
-            </div>
-            <div class="user-bar">
-                <div class="user">
-                    <div id="profile-pic">
-                            <img src="" id="picture">
-                    </div>
-                    <div id="username">
-                        <div class="btn-group">
-                            <button type="button" id="sb-user" class="btn btn-primary">Username</button>
-                            <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <span class="sr-only">Toggle Dropdown</span>
-                            </button>
-                            <div class="dropdown-menu">                                      <a class="dropdown-item" href="#">My Profile</a>
-                              <a class="dropdown-item" href="#">Followed Content</a>
-                              <a class="dropdown-item" href="#">Settings</a>
-                              <div class="dropdown-divider"></div>
-                              <a class="dropdown-item" id="logout" href="#">Logout</a>
-                            </div>
+                <div id="bottompage">
+                        <p>Switch theme:</p>
+                        <div class="redirects" id="icons">
+                            <a href=""><i class="fa fa-facebook-f fa-2x"></i></a>
+                            <a href=""><i class="fa fa-github fa-2x"></i></a>
+                            <a href=""><i class="fa fa-envelope fa-2x"></i></a>
                         </div>
-                    </div>            
-                </div>
-                <div id="search-bar">
-                    <input class="search-txt" type="text" name="" placeholder="Type to search">
-                    <a class="search-btn" href="#">
-                        <i class="fa fa-search"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="container">
-                <h2>Members List</h2>
-                <div id="heading">
-                    <span>username here</span>
-                    <span>Name here</span>
-                    <span>email here</span>
-                    <span>Status here</span>
-                </div>
-                <ul id="member-list" class="list-group">
-                </ul>
-            </div>
-            <div id="bottompage">
-                    <p>Switch theme:</p>
-                    <div class="redirects" id="icons">
-                        <a href=""><i class="fa fa-facebook-f fa-2x"></i></a>
-                        <a href=""><i class="fa fa-github fa-2x"></i></a>
-                        <a href=""><i class="fa fa-envelope fa-2x"></i></a>
-                    </div>
-                    <div class="redirects" id="tc">
-                        <a href="">Terms & Conditions</a>
-                        <a href="">Privacy Policy</a>
+                        <div class="redirects" id="tc">
+                            <a href="">Terms & Conditions</a>
+                            <a href="">Privacy Policy</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div>  
+        </div>
             <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
             <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
             <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>

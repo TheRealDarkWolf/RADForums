@@ -15,7 +15,13 @@ body,html{
 }
 
 body{
-    background:lightgrey;
+    background:url("../images/bookstack1.png");
+    background-size:12.5%;
+}
+
+#opacity{
+    z-index:1;
+    background-color:rgba(40,40,40, 0.7);
 }
 ::-webkit-scrollbar{
     background:#B3C7D6FF;
@@ -68,7 +74,7 @@ body{
     width: 80%;
     position:relative;
     top:120px;
-    z-index: 1;
+    z-index: 2;
     font-family: 'Orbitron' , sans-serif;
     font-size:14px;
 }
@@ -219,7 +225,14 @@ ul .nav-op{
     flex-grow:1;
     text-align:center;
     margin:0px;
+}
 
+#heading>span{
+    max-width:250px;
+    padding:5px;
+    font-size:22px;
+    margin-bottom:5px;
+    font-weight:bold;
 }
 
 #member-list{

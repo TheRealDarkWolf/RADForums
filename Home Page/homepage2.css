@@ -13,11 +13,13 @@ body,html{
     min-height:100%;
     padding:0;
     margin:0;
+    background:rgba(40,40,40, 0.6);
     /*font-family: 'Montserrat';*/
 }
 
 body{
-    background:lightgrey;
+    background:url("../images/bookstack1.png");
+    background-size:12.5%;
 }
 ::-webkit-scrollbar{
     background:#B3C7D6FF;
@@ -28,8 +30,13 @@ body{
     border-radius: 10px;
     background-color:#283655;
 }
+#opacity{
+    z-index:1;
+    background-color:rgba(40, 40, 40, .7);
+}
 
 #homepage{
+    z-index:2;
     width: 80%;
     min-height: 200%;
     margin: 0 auto;
@@ -70,7 +77,7 @@ ul{
     width: 80%;
     position:relative;
     top:120px;
-    z-index: 1;
+    z-index: 3;
     font-family: 'Orbitron' , sans-serif;
     font-size:14px;
 }

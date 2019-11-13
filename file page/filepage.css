@@ -12,8 +12,15 @@ body,html{
     font-family:'Montserrat';
 }
 body{
-    background:lightgrey;
+    background:url("../images/bookstack1.png");
+    background-size:12.5%;
 }
+
+#opacity{
+    z-index:1;
+    background-color:rgba(40,40,40, 0.7);
+}
+
 ::-webkit-scrollbar{
     background:#B3C7D6FF;
     width:8px;

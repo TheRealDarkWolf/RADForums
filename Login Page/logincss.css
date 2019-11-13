@@ -1,7 +1,7 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import "https://fonts.googleapis.com/css?family=Nova+Flat&display=swap";
 body{
-    background: url("library-hero.jpg") no-repeat;
+    background: url("../images/library-hero.jpg") no-repeat;
     background-size: 100% 100%;
     width: 100vw;
     height: 100vh;

@@ -12,142 +12,145 @@
 
         <title>File Page-RadForums</title>
         <link rel="stylesheet" href="filepage.css">
+        <link rel="icon" href="../images/logotitle.png" type="image/x-icon">
     </head>
     <body>
-        <div id="homepage">
-            <div id="toppage">
-                <img id="logo" src="logo2.png">
-                <div id="navbar">
-                    <ul>
-                        <li class="nav-op"><a>SUBJECT</a>
-                            <ul>
-                                <li><a href="../Subject Page/subject-page.html">UE18CS205</a></li>
-                                <li><a>SUBJECT 2</a></li>
-                                <li><a>SUBJECT 3</a></li>
-                                <li><a>SUBJECT 4</a></li>
-                                <li><a>SUBJECT 5</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-op"><a>ACTIVITY</a>
-                            <ul>
-                                <li><a>CALENDAR</a></li>
-                                <li><a href="../Group Info/groupinfo.html">GROUP INFO</a></li>
-                                <li><a>MY ACTIVITY</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-op"><a>MORE</a>
-                            <ul>
-                                <li><a>CONTACT US</a></li>
-                                <li><a>REPORT A BUG</a></li>
-                                <li><a>FEEDBACK FORM</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-op"><a>OTHER FORUMS</a>
-                            <ul>
-                                <li><a>GD FORUMS</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+        <div id="opacity">
+            <div id="homepage">
+                <div id="toppage">
+                    <img id="logo" src="../images/logo2.png">
+                    <div id="navbar">
+                        <ul>
+                            <li class="nav-op"><a>SUBJECT</a>
+                                <ul>
+                                    <li><a href="../Subject Page/subject-page.html">UE18CS205</a></li>
+                                    <li><a>UE18CS204</a></li>
+                                    <li><a>UE18CS203</a></li>
+                                    <li><a>UE18CS202</a></li>
+                                    <li><a>UE18CS201</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-op"><a>ACTIVITY</a>
+                                <ul>
+                                    <li><a>CALENDAR</a></li>
+                                    <li><a href="../Group Info/groupinfo.html">GROUP INFO</a></li>
+                                    <li><a>MY ACTIVITY</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-op"><a>MORE</a>
+                                <ul>
+                                    <li><a>CONTACT US</a></li>
+                                    <li><a>REPORT A BUG</a></li>
+                                    <li><a>FEEDBACK FORM</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-op"><a>OTHER FORUMS</a>
+                                <ul>
+                                    <li><a>GD FORUMS</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="user-bar">
-                    <div class="user">
-                        <div id="profile-pic">
-                            <img src="" id="picture">
+                <div class="user-bar">
+                        <div class="user">
+                            <div id="profile-pic">
+                                <img src="" id="picture">
+                            </div>
+                            <div id="username">
+                                <div class="btn-group">
+                                    <button type="button" id="sb-user" class="btn btn-primary">Username</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <div class="dropdown-menu">                                      
+                                    <a class="dropdown-item" href="#">My Profile</a>
+                                    <a class="dropdown-item" href="#">Followed Content</a>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" id="logout" href="#">Logout</a>
+                                    </div>
+                                </div>
+                            </div>            
                         </div>
-                        <div id="username">
-                            <div class="btn-group">
-                                <button type="button" id="sb-user" class="btn btn-primary">Username</button>
-                                <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                  <span class="sr-only">Toggle Dropdown</span>
-                                </button>
-                                <div class="dropdown-menu">                                      
-                                  <a class="dropdown-item" href="#">My Profile</a>
-                                  <a class="dropdown-item" href="#">Followed Content</a>
-                                  <a class="dropdown-item" href="#">Settings</a>
-                                  <div class="dropdown-divider"></div>
-                                  <a class="dropdown-item" id="logout" href="#">Logout</a>
+                        <div id="search-bar">
+                            <input class="search-txt" type="text" name="" placeholder="Type to search">
+                            <a class="search-btn" href="#">
+                                <i class="fa fa-search"></i>
+                            </a>
+                        </div>
+                
+                
+                </div>
+                <div class="container">
+                        <div id="div1">
+                            <h1><center>Discrete Mathematics And Logic(UE18CS205)</center></h1>
+                            <h2>Unit 2-Sets, Relations and Functions </h2>
+                            <div id="align">
+                            <pre> <h4><i class='far fa-thumbs-up' onclick="up()" ></i>   <i class='far fa-thumbs-down' onclick="down()" > </i>   <i  class='far fa-comment' onclick="comment()" ></i></h4></pre>               
+                            <b id="count">0 score</b> <b id="c">0 comments</b>
+                            </div>
+                            <h6>Uploaded By S.Krishna <i class='fas fa-check-circle'></i>  <b id="changedate"></b>  </h6>
+                        </div>
+                        <br>
+                        <br><br><br>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-8" >                   
+                                    <div id="area2">
+                                        <pre><h4> <i class='fas fa-plus-circle'></i> <i class='fas fa-minus-circle'></i>                <i class="fa fa-chevron-circle-left"></i> <input type="text" style="height: 20px; width:50px"> <i class="fa fa-chevron-circle-right"></i></h4></pre> 
+                                    </div>
+                                    <div id="area1"></div>
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <h2>COMMENTS</h2>
+                                        <hr style="border-width: 2px;border-color:black">
+                                        <button id="show">ADD A COMMENT</button>
+                                        <br><br>
+                                        <div class="form-group" id="comm">
+                                            <pre><h4> <span class="dot" id="dot"></span> <textarea class="form-control" rows="4" id="comment" name="text" style=" border-color:black;" placeholder="Add Your Comment Or Ask A Question..."></textarea></h4></pre> 
+                                            <button id="bs" onclick="cadd()">POST</button>
+                                        </div>
+                                        <br><br>
+                                        <div id="od">
+                                        </div>  
+                                        <br><br>                      
+                                </div>                
+                                <div class="col-sm-4">
+                                    <div id="upload">
+                                        <br>
+                                        <center><p>ADD A NEW DOCUMENT TO THE COURSE DRIVE</p></center>
+                                        <br>
+                                        <br>
+                                        <center><button>+  UPLOAD</button></center>
+                                        <br><br><br>
+                                    </div>
+                                    <br>
+                                    <div id="thread">
+                                    <center> <h3> START A THREAD ON DISCRETE MATHEMATICS AND LOGIC</h3></center>
+                                        <center><textarea class="form-control" rows="2"  name="text" id="field" placeholder="Start thread..." style="border-color: black"></textarea></center>
+                                        <center><button type="submit" onclick="thread()">POST</button></center>
+                                    </div>
+                                    <br>
+                                    <center><button id="download"><i class="fa fa-download"> DOWNLOAD</i></button></center>
                                 </div>
                             </div>
                         </div>            
-                    </div>
-                    <div id="search-bar">
-                        <input class="search-txt" type="text" name="" placeholder="Type to search">
-                        <a class="search-btn" href="#">
-                            <i class="fa fa-search"></i>
-                        </a>
-                    </div>
-            
-            
-            </div>
-            <div class="container">
-                    <div id="div1">
-                        <h1><center>Discrete Mathematics And Logic(UE18CS205)</center></h1>
-                        <h2>Unit 2-Sets, Relations and Functions </h2>
-                        <div id="align">
-                         <pre> <h4><i class='far fa-thumbs-up' onclick="up()" ></i>   <i class='far fa-thumbs-down' onclick="down()" > </i>   <i  class='far fa-comment' onclick="comment()" ></i></h4></pre>               
-                         <b id="count">0 score</b> <b id="c">0 comments</b>
+                </div>
+                <div id="bottompage">
+                        <p>Switch theme:</p>
+                        <div class="redirects" id="icons">
+                            <a href=""><i class="fa fa-facebook-f fa-2x"></i></a>
+                            <a href=""><i class="fa fa-github fa-2x"></i></a>
+                            <a href=""><i class="fa fa-envelope fa-2x"></i></a>
                         </div>
-                        <h6>Uploaded By S.Krishna <i class='fas fa-check-circle'></i>  <b id="changedate"></b>  </h6>
-                    </div>
-                    <br>
-                    <br><br><br>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-8" >                   
-                                <div id="area2">
-                                    <pre><h4> <i class='fas fa-plus-circle'></i> <i class='fas fa-minus-circle'></i>                <i class="fa fa-chevron-circle-left"></i> <input type="text" style="height: 20px; width:50px"> <i class="fa fa-chevron-circle-right"></i></h4></pre> 
-                                </div>
-                                <div id="area1"></div>
-                                    <br>
-                                    <br>
-                                    <br>
-                                    <h2>COMMENTS</h2>
-                                    <hr style="border-width: 2px;border-color:black">
-                                    <button id="show">ADD A COMMENT</button>
-                                    <br><br>
-                                    <div class="form-group" id="comm">
-                                        <pre><h4> <span class="dot" id="dot"></span> <textarea class="form-control" rows="4" id="comment" name="text" style=" border-color:black;" placeholder="Add Your Comment Or Ask A Question..."></textarea></h4></pre> 
-                                        <button id="bs" onclick="cadd()">POST</button>
-                                    </div>
-                                    <br><br>
-                                    <div id="od">
-                                    </div>  
-                                    <br><br>                      
-                            </div>                
-                            <div class="col-sm-4">
-                                <div id="upload">
-                                    <br>
-                                    <center><p>ADD A NEW DOCUMENT TO THE COURSE DRIVE</p></center>
-                                    <br>
-                                    <br>
-                                    <center><button>+  UPLOAD</button></center>
-                                    <br><br><br>
-                                </div>
-                                <br>
-                                <div id="thread">
-                                  <center> <h3> START A THREAD ON DISCRETE MATHEMATICS AND LOGIC</h3></center>
-                                    <center><textarea class="form-control" rows="2"  name="text" id="field" placeholder="Start thread..." style="border-color: black"></textarea></center>
-                                    <center><button type="submit" onclick="thread()">POST</button></center>
-                                </div>
-                                <br>
-                                <center><button id="download"><i class="fa fa-download"> DOWNLOAD</i></button></center>
-                            </div>
+                        <div class="redirects" id="tc">
+                            <a href="">Terms & Conditions</a>
+                            <a href="">Privacy Policy</a>
                         </div>
-                    </div>            
-            </div>
-            <div id="bottompage">
-                    <p>Switch theme:</p>
-                    <div class="redirects" id="icons">
-                        <a href=""><i class="fa fa-facebook-f fa-2x"></i></a>
-                        <a href=""><i class="fa fa-github fa-2x"></i></a>
-                        <a href=""><i class="fa fa-envelope fa-2x"></i></a>
-                    </div>
-                    <div class="redirects" id="tc">
-                        <a href="">Terms & Conditions</a>
-                        <a href="">Privacy Policy</a>
-                    </div>
-            </div>
+                </div>
+            </div> 
         </div>
         <!-- The core Firebase JS SDK is always required and must be listed first -->
         <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
