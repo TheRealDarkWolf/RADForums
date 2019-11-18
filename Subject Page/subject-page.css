@@ -1,5 +1,8 @@
 @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
 @import url('https://fonts.googleapis.com/css?family=Orbitron:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap');
+
+
 
 colorcode{
     color:#e5faf8;
@@ -9,9 +12,16 @@ body,html{
     min-height:100%;
     padding:0;
     margin:0;
+    background:rgba(40,40,40, 0.6);
 }
 body{
-    background:lightgrey;
+    background:url("../images/bookstack1.png");
+    background-size:12.5%;
+}
+
+#opacity{
+    z-index:1;
+    background-color:rgba(40,40,40, 0.7);
 }
 ::-webkit-scrollbar{
     background:#B3C7D6FF;
@@ -203,7 +213,7 @@ h3{
 .right-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 30vw;
 } 
@@ -223,7 +233,7 @@ h3{
     margin:20px;
 }
 .thread{
-    min-width: 600px;
+    width: 600px;
     height:100%;
     min-height: 225px;
     margin: 10px;
@@ -235,14 +245,20 @@ h3{
 
 .upload-container{
     width:100%;
-    height:100%;
+    height:85%;
     overflow-y:scroll;
     overflow-x:hidden;
+}
+.uploads h3{
+    margin-bottom:0px;
+    border-bottom:1px solid black;
 }
 
 #upcoming {
     padding: 35px;
     border: 2px solid black;
+    margin:20px;
+    max-height:200px;
 }
 
 #bottompage{
@@ -269,7 +285,7 @@ h3{
     max-width: 300px;
     margin: 5px;
     padding: 35px;
-    border: 2px solid black;
+    border: 1px solid black;
 }
 
 #new-thread > input {
@@ -279,14 +295,67 @@ h3{
     text-align: center;
 }
 
-#upload-file {
-    border: 3px solid black;
-    height: 30px;
-    width: 125px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    font-weight: bolder;
+#upload-files{
+    width: 20vw;
+    height: 39vh;
+    margin: 20px 20px 0;
+    border: 1px solid black;
+    margin-bottom:10px;
+    margin-top:0px;
+}
+
+#upload-files h3{
+    text-align:center;
+    font-family:'Montserrat';
+    font-size:22px;
+    padding:10px 0;
+}
+.select{
+    display:inline-block;
+    margin:0px 10px;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance:none;
+    -o-appearance:none;
+    -ms-appearance: none;
+    appearance: none;
+
+    display: block;
+    margin: 3px 0 30px 0px;
+    padding: 10px 50px 10px 10px;
+    background: url("../images/select.png") no-repeat 95% center;
+    color: grey;
+    border-radius: 5px;
+    border: 2px solid navy;
+    width: 180px;
+    font-size: 15px;
+}
+select option{
+    background-color: #eee;
+    font-size: 15px;
+    color: black;
+    border:2px solid navy;
+
+}
+
+#upload-files .button{
+    border:none;
+    margin-top:30px;
+    border-radius:2px;
+    font-family:'Montserrat';
+    font-weight:600;
+    font-size:30px;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:2px;
+    background-color:#3BB143;
+    transition:all 150ms linear;
+}
+#upload-files .button:hover{
+    box-shadow:2px 2px 2px #bbb;
+    font-size:31px;
 }
 
 #buttons {
