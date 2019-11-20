@@ -207,6 +207,26 @@ ul .nav-op{
     line-height:30px;
     width:0px;
 }
+
+.carousel{
+    height:55vh;
+    width:50vw;
+    margin:50px;
+}
+
+.carousel img{
+    filter:blur(6px);
+    -webkit-filter: blur(6px);
+    height:500px;
+}
+
+.carousel-inner{
+    height:100%;
+}
+.carousel-caption{
+    bottom:100px;
+}
+
 #row-1, #row-2, #row-3{
     width:100%;
     clear:both;

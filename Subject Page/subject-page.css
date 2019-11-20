@@ -245,10 +245,15 @@ h3{
 
 .upload-container{
     width:100%;
-    height:85%;
+    height:90%;
     overflow-y:scroll;
     overflow-x:hidden;
 }
+
+#upload-container .btn{
+    margin-right:5px;
+}
+
 .uploads h3{
     margin-bottom:0px;
     border-bottom:1px solid black;
