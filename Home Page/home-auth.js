@@ -70,7 +70,7 @@ fileButton.addEventListener('change' , function(e){
     );
 });
 
-//loading the recent files in the divbox
+/*loading the recent files in the divbox
 function uploadview(subject,filename,dllink){
     var divbox=document.getElementById("upload-container");
     let div=document.createElement('div');
@@ -114,3 +114,4 @@ storageRef.child("pdfs/UE18CS201").list({maxResults:3}).then(function(res){
         uploadview("UE18CS201",itemref.name.substring(0,itemref.name.length-4),dl);
     })
 });
+*/
