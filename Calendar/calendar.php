@@ -50,30 +50,30 @@
         <div id="opacity">
             <div id="homepage">
                 <div id="toppage">
-                        <a href="../Home Page/homepage2.html">
+                        <a href="../Home Page/homepage2.php">
                             <img id="logo" src="../images/logo2.png">
                         </a>
                         <div id="navbar">
                             <ul>
                                 <li class="nav-op"><a>SUBJECT</a>
                                     <ul>
-                                            <li><a href="../Subject Page/01.html">UE18CS201</a></li>
-                                            <li><a href="../Subject Page/02.html">UE18CS202</a></li>
-                                            <li><a href="../Subject Page/03.html">UE18CS203</a></li>
-                                            <li><a href="../Subject Page/04.html">UE18CS204</a></li>
-                                            <li><a href="../Subject Page/05.html">UE18CS205</a></li>
+                                            <li><a href="../Subject Page/01.php">UE18CS201</a></li>
+                                            <li><a href="../Subject Page/02.php">UE18CS202</a></li>
+                                            <li><a href="../Subject Page/03.php">UE18CS203</a></li>
+                                            <li><a href="../Subject Page/04.php">UE18CS204</a></li>
+                                            <li><a href="../Subject Page/05.php">UE18CS205</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-op"><a>ACTIVITY</a>
                                     <ul>
                                         <li><a>CALENDAR</a></li>
-                                        <li><a href="../Group Info/groupinfo.html">GROUP INFO</a></li>
+                                        <li><a href="../Group Info/groupinfo.php">GROUP INFO</a></li>
                                         <li><a href="../activity_page.html">MY ACTIVITY</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-op"><a>MORE</a>
                                     <ul>
-                                        <li><a href="../About Us/aboutus.html">ABOUT US</a></li>
+                                        <li><a href="../About Us/aboutus.php">ABOUT US</a></li>
                                         <li><a>REPORT A BUG</a></li>
                                         <li><a>FEEDBACK FORM</a></li>
                                     </ul>

@@ -75,7 +75,7 @@ auth.onAuthStateChanged(user =>{
         db.collection('users').doc(id).update({
             status:"offline"
         });   
-        setTimeout(function(){ window.location.assign("../Login Page/login.html") },2000);
+        setTimeout(function(){ window.location.assign("../index.php") },2000);
     }
 });
  

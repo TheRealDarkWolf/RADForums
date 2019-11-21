@@ -111,7 +111,7 @@ body{
 #left-text h3{
     margin: 7px 10px 50px;
     font-size:25px;
-    font-family: cursive;
+    font-family: 'Montserrat';
 }
 
 #left-text p{
@@ -124,7 +124,7 @@ body{
 }
 
 #col >h1{
-    font-family: 'Nova Flat', cursive;
+    font-family: 'Nova Flat', 'Montserrat';
     float:left;
     color:slategray;
     margin:5px 5px;

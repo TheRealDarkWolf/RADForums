@@ -15,7 +15,7 @@ loginForm.addEventListener('submit', (e) =>{
             });
         }); */
         window.localStorage.setItem('user', cred.user.email);
-        window.location.assign("../Home Page/homepage2.html");
+        window.location.assign("Home Page/homepage2.php");
     })
 })
 

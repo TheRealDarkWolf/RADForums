@@ -3,7 +3,7 @@ logout.addEventListener('click', (e) => {
     e.preventDefault();
     auth.signOut().then(() =>{
         console.log('user signed out');
-        window.location.assign("../Login Page/login.html");
+        window.location.assign("../index.php");
     })
 });
 
@@ -31,7 +31,7 @@ auth.onAuthStateChanged(user =>{
     }
     /*
     else{
-        window.location.assign("../Login Page/login.html")
+        window.location.assign("../index.php")
     }
     */
 });

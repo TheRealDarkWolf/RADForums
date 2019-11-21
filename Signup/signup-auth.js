@@ -24,7 +24,7 @@ signupForm.addEventListener('submit', (e) => {
      //signup the user
     auth.createUserWithEmailAndPassword(email, password).then(cred =>{
         console.log(cred);
-        window.location.assign("../Login Page/login.html");
+        window.location.assign("../index.php");
     });
 })
 
@@ -47,7 +47,7 @@ loginForm.addEventListener('submit' (e) =>{
 
     auth.signInWithEmailAndPassword(email, password).then(cred =>{
         console.log(cred.user);
-        window.location.assign("../Home Page/homepage2.html");
+        window.location.assign("../Home Page/homepage2.php");
     })
 })
 
