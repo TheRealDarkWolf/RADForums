@@ -24,7 +24,7 @@
                             </li>
                             <li class="nav-op"><a>ACTIVITY</a>
                                 <ul>
-                                    <li><a href="../Calendar/calendar.html">CALENDAR</a></li>
+                                    <li><a href="../Calendar/calendar2.php">CALENDAR</a></li>
                                     <li><a href="../Group Info/groupinfo.php">GROUP INFO</a></li>
                                     <li><a href="../activity_page.html">MY ACTIVITY</a></li>
                                 </ul>
@@ -33,7 +33,7 @@
                                 <ul>
                                     <li><a href="../About Us/aboutus.php">ABOUT US</a></li>
                                     <li><a>REPORT A BUG</a></li>
-                                    <li><a>FEEDBACK FORM</a></li>
+                                    <li><a href="../feedback form/feedback.php">FEEDBACK FORM</a></li>
                                 </ul>
                             </li>
                             <li class="nav-op"><a>OTHER FORUMS</a>
@@ -47,7 +47,7 @@
                 <div class="user-bar">
                         <div class="user">
                             <div id="profile-pic">
-                                <img src="" id="picture">
+                                <img src="../images/fb death.png" id="picture">
                             </div>
                             <div id="username">
                                 <div class="btn-group">
@@ -56,7 +56,7 @@
                                     <span class="sr-only">Toggle Dropdown</span>
                                     </button>
                                     <div class="dropdown-menu">                                      
-                                    <a class="dropdown-item" href="../userprofile.html">My Profile</a>
+                                    <a class="dropdown-item" href="../Profile page/profile.php">My Profile</a>
                                     <a class="dropdown-item" href="#">Followed Content</a>
                                     <a class="dropdown-item" href="#">Settings</a>
                                     <div class="dropdown-divider"></div>

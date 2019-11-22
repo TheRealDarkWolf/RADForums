@@ -70,9 +70,9 @@ fileButton.addEventListener('change' , function(e){
     );
 });
 
-//loading the recent files in the divbox
+/*loading the recent files in the divbox
 function uploadview(subject,filename,dllink){
-    var divbox=document.getElementById("upload-container");
+    var divbox=document.getElementsByClassName("upload-container")[0];
     let div=document.createElement('div');
     div.setAttribute("class","card");
     let div1=document.createElement('div');
@@ -94,6 +94,7 @@ function uploadview(subject,filename,dllink){
     p2.textContent="Uploaded By: Danish Ebadulla";
     p1.textContent="0 minutes ago"
     p1.setAttribute("style","float:right");
+    a1.setAttribute("href",dllink);
     a2.setAttribute("href",dllink);
     div.append(div1);
     div2.append(p1);
@@ -106,11 +107,12 @@ function uploadview(subject,filename,dllink){
 
 var storageRef=storage.ref();
 var arr=[];
-storageRef.child("pdfs/UE18CS201").list({ maxResults:3}).then(function(res){res.items.forEach(function(itemref){itemref.getDownloadURL().then(function(url){arr.push(url)})})});
+storageRef.child("pdfs/UE18CS201").list({ maxResults:3}).then(function(res){res.items.forEach(function(itemref){itemref.getDownloadURL().then(function(url){arr.push(url)}).then(function(){
 storageRef.child("pdfs/UE18CS201").list({maxResults:3}).then(function(res){
     res.items.forEach(function(itemref){
         var dl=arr.pop();
         console.log(dl);
         uploadview("UE18CS201",itemref.name.substring(0,itemref.name.length-4),dl);
     })
-});
+})})})});
+*/
