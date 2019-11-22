@@ -18,6 +18,44 @@ body{
     background:url("../images/bookstack1.png");
     background-size:12.5%;
 }
+#loader{
+    position:fixed;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color:lightblue;
+    z-index:100;
+    height:100vh;
+    width:100%;
+    flex-direction: column;
+}
+#load-logo{
+
+    height:80px;
+    width:80px;
+    background-size:100%;
+    background-image:url("../images/logotitle.png");
+    position:relative;
+    -webkit-animation: loading 1s infinite;
+    animation: loading 1s infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes loading {
+from { transform: rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+@keyframes loading {
+from { transform: rotate(0deg);}
+to { transform:rotate(360deg);}
+}
+#loader p{
+font-family:'Montserrat';
+margin:5px;
+font-size:18px;
+}
 
 #opacity{
     z-index:1;
@@ -215,38 +253,38 @@ ul .nav-op{
     margin:auto;
 }
 
-#buttons {
+.container #buttons {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-#buttons > button {
+.container #buttons > button {
     width: 400px;
     margin: 10px;
 }
 
-.cal{
-    margin:25px;
+.container .cal{
+    margin:60px;
     height:auto;
     border-radius: 2px;
     border-color: blue;
 }
 
-TD{
+.container TD{
     width:50px;
     height:50px;
 }
-TR{
+.container TR{
     width:50px;
 }
 
-#caltable{
+.container #caltable{
     width:600px;
     height:380px;
-    margin-left: 25x;
+    float:right;
 }
-.addevent{
+.container .addevent{
     height:100%;
     float:left;
     width:25%;
@@ -256,14 +294,13 @@ TR{
     margin-right: 50px;;
 }
 
-#yourevents{
+.container #yourevents{
     font-size:16px;
     font-family: sans-serif;
     text-align: center;
     float:right;
     width:25%;
-    margin-left:65px;
-    margin-top:50px;
+    margin:65px;
     margin-bottom: auto;
     color: #4d648d;
 }
@@ -271,7 +308,7 @@ TR{
 .container{
     height:115vh;
 }
-#nav{
+.container #nav{
     background:peru;
     width:50%;
     font-family: 'Montserrat';

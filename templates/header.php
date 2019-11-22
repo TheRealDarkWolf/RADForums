@@ -24,7 +24,7 @@
                             </li>
                             <li class="nav-op"><a>ACTIVITY</a>
                                 <ul>
-                                    <li><a href="../Calendar/calendar.html">CALENDAR</a></li>
+                                    <li><a href="../Calendar/calendar2.php">CALENDAR</a></li>
                                     <li><a href="../Group Info/groupinfo.php">GROUP INFO</a></li>
                                     <li><a href="../activity_page.html">MY ACTIVITY</a></li>
                                 </ul>

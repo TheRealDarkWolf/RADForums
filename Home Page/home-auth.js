@@ -70,7 +70,7 @@ fileButton.addEventListener('change' , function(e){
     );
 });
 
-//loading the recent files in the divbox
+/*loading the recent files in the divbox
 function uploadview(subject,filename,dllink){
     var divbox=document.getElementsByClassName("upload-container")[0];
     let div=document.createElement('div');
