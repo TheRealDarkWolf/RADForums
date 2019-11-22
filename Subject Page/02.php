@@ -10,7 +10,7 @@
         <link rel="icon" href="../images/logotitle.png" type="image/x-icon">
     </head>
     <?php require('../templates/header.php'); ?>
-            <h1>Data Structures-UE18CS202</h1>
+            <h1 id="subject-title">Data Structures-UE18CS202</h1>
             <div class="container">
                 <div class="left-container">
                     <div id="info-block">
