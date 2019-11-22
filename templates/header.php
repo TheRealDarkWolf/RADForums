@@ -33,7 +33,7 @@
                                 <ul>
                                     <li><a href="../About Us/aboutus.php">ABOUT US</a></li>
                                     <li><a>REPORT A BUG</a></li>
-                                    <li><a>FEEDBACK FORM</a></li>
+                                    <li><a href="../feedback form/feedback.php">FEEDBACK FORM</a></li>
                                 </ul>
                             </li>
                             <li class="nav-op"><a>OTHER FORUMS</a>
