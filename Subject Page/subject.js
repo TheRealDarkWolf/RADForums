@@ -94,7 +94,15 @@ function uploadview(subject,filename,dllink){
     p1.textContent="0 minutes ago"
     p1.setAttribute("style","float:right");
     a1.setAttribute("href",dllink);
-    a2.setAttribute("href",dllink);
+    var xhr = new XMLHttpRequest();
+    xhr.responseType = 'blob';
+    xhr.onload = function(event) {
+        let blob = xhr.response;
+        a2.href = URL.createObjectURL(blob);
+        a2.download = filename;
+    };
+    xhr.open('GET', dllink);
+    xhr.send();
     div.append(div1);
     div2.append(p1);
     div2.append(p2);
