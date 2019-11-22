@@ -136,11 +136,4 @@ var storageRef=storage.ref();
 var arr=[];
 var h=document.getElementById("subject-title");
 var str=h.innerHTML;
-storageRef.child("pdfs/"+str.substring(str.length-9,)).list({ maxResults:3}).then(function(res){res.items.forEach(function(itemref){itemref.getDownloadURL().then(function(url){arr.push(url)}).then(function(){
-storageRef.child("pdfs/"+str.substring(str.length-9,)).list({maxResults:3}).then(function(res){
-    res.items.forEach(function(itemref){
-        var dl=arr.pop();
-        console.log(dl);
-        uploadview(str.substring(str.length-9,),itemref.name.substring(0,itemref.name.length-4),dl);
-    })
-})})})});
+storageRef.child("pdfs/"+str.substring(str.length-9,)).list({ maxResults:3}).then(function(res){res.items.forEach(function(itemref){itemref.getDownloadURL().then(function(url){uploadview(str.substring(str.length-9,),itemref.name.substring(0,itemref.name.length-4),url);})})});
