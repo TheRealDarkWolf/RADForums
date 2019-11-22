@@ -1,0 +1,314 @@
+@import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap');
+
+colorcode{
+    color:#e5faf8;
+    color:#ffffff • #d0e1f9 • #4d648d • #283655 • #1e1f26
+}
+
+
+
+body,html{
+    min-height:100%;
+    padding:0;
+    margin:0;
+    background:rgba(40,40,40, 0.6);
+    /*font-family: 'Montserrat';*/
+}
+
+body{
+    background:url("../images/bookstack1.png");
+    background-size:12.5%;
+}
+#loader{
+    position:fixed;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    background-color:lightblue;
+    z-index:100;
+    height:100vh;
+    width:100%;
+    flex-direction: column;
+}
+#load-logo{
+
+    height:80px;
+    width:80px;
+    background-size:100%;
+    background-image:url("../images/logotitle.png");
+    position:relative;
+    -webkit-animation: loading 1s infinite;
+    animation: loading 1s infinite;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+}
+
+@-webkit-keyframes loading {
+from { transform: rotate(0deg);}
+to {transform:rotate(360deg);}
+}
+
+@keyframes loading {
+from { transform: rotate(0deg);}
+to { transform:rotate(360deg);}
+}
+#loader p{
+font-family:'Montserrat';
+margin:5px;
+font-size:18px;
+}
+
+::-webkit-scrollbar{
+    background:#B3C7D6FF;
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color:#283655;
+}
+#opacity{
+    z-index:1;
+    background-color:rgba(40, 40, 40, .7);
+}
+
+#homepage{
+    z-index:2;
+    width: 80%;
+    min-height: 200%;
+    margin: 0 auto;
+    border-right: 1px solid white;
+    background: white repeat;
+    border-left: 1px solid white;
+    box-shadow: 0px 0px 16px 1px rgba(40,40,40, 0.6);
+}
+ul{
+    margin:0px;
+    padding:0px;
+    list-style:none;
+    color:white;
+}
+
+#toppage{
+    background-color:#283655;
+    background: -webkit-linear-gradient(right bottom, #283655 0%, #4d648d 50%, #e5faf8 100%);
+    width:100%;
+    height: 160px;
+    margin:0px;
+    padding:0px;
+    border:0px;
+}
+
+#logo{
+    width:231.05px;
+    height:114.73px;
+    z-index:10;
+    position:absolute;
+    top:-3%;
+    left:10%;
+}
+
+#navbar{
+    float:right;
+    height:40px;
+    width: 80%;
+    position:relative;
+    top:120px;
+    z-index: 3;
+    font-family: 'Orbitron' , sans-serif;
+    font-size:14px;
+}
+
+ul .nav-op{
+    border-radius:10px 10px 0 0;
+}
+#navbar ul li{
+    float:left;
+    width: 170px;
+    height:40px;
+    background-color:#d0e1f9;
+    color:#283655;
+    line-height: 40px;
+    text-align:center;
+    margin-right: 6px;
+}
+
+#navbar ul li a{
+    text-decoration: none;
+    display: block;
+}
+
+#navbar ul li a:hover{
+    color:#4d648d;
+    cursor:pointer;
+}
+
+#navbar ul li ul li{
+    display:none;
+}
+
+#navbar ul li:hover ul li{
+    width:170px;
+    display:block;
+    margin:0;
+    border-bottom: 2px solid rgba(255, 255, 255, .5);
+}
+.user-bar{
+    display:flex;
+    margin:10px;
+    height:44px;
+    border-radius:3px;
+    background-color:#283655;
+    align-items:center;
+    justify-content: space-between;
+}
+.user{
+    display:flex;
+    height:44px;
+    background-color:#283655;
+    align-items:center;
+    border-radius:3px;
+}
+#picture{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    background:grey;
+    margin:0 4px;
+}
+
+#username .show{
+    background:#283655;   
+}
+
+#username .show a:hover{
+    background:#d0e1f9;
+    color:#283655;
+}
+.dropdown-menu a{
+    color:#d0e1f9;
+}
+.user .btn-primary{
+    color:#d0e1f9;
+    border-color: #283655;
+}
+.user .btn-primary:hover{
+    border-color:#283655;
+}
+#username .btn{
+    background:#283655;
+    overflow:visible;
+}
+
+#search-bar{
+    height:30px;
+    background:#1e1f26;
+    border-radius: 30px;
+    margin-right:4px;
+}
+
+#search-bar:hover> .search-txt{
+    width:240px;
+    padding:0 10px;
+    margin-left:10px;
+}
+#search-bar:hover> .search-btn{
+    background:#1e1f26;
+    text-decoration:none;
+}
+.search-btn{
+    color:#d0e1f9;
+    float:right;
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#283655;
+    text-decoration: none;
+    cursor:pointer;
+}
+.search-btn>i{
+    font-size:14px;
+}
+.search-txt{
+    border:none;
+    background:none;
+    outline:none;
+    float:left;
+    padding:0;
+    color:white;
+    font-size:14px;
+    transition:0.4s;
+    line-height:30px;
+    width:0px;
+}
+
+.container{
+    min-height:100vh;
+}
+
+.container h3{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:30px;
+    font-family:'Montserrat';
+    font-weight:bold;
+}
+div #profile-top{
+    margin:0 auto;
+    width:500px;
+    height:100px;
+    font-family:'Montserrat';
+    font-size:24px;
+    margin-bottom:80px;
+}
+
+#profile-top #img{
+    width:100px;
+    height:100px;
+    background-image:url("../images/fb death.png");
+    background-size:100%;
+    border-radius:50px;
+    float:left;
+    margin:0 40px;
+}
+
+#profile-bottom{
+    margin:0 auto;
+    width:600px;
+}
+#profile-bottom p{
+    margin:10px 0 10px 0;
+    font-family:'Montserrat';
+    font-size:24px;
+    display:inline-block;
+}
+
+
+
+#bottompage{
+    width:100%;
+    background-color:#283655;
+    height:100px;
+    bottom:0;
+    display:flex;
+    justify-content: space-between;
+}
+
+#bottompage .fa{
+    margin:0 20px 0;
+}
+
+#bottompage #tc{
+    margin:20px;
+    overflow-wrap: break-word;
+    width:150px;
+}
+
+#bottompage #icons{
+    margin:auto;
+}
