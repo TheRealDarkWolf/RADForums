@@ -2,6 +2,16 @@
 const signupForm = document.querySelector("#signup-form")
 signupForm.addEventListener('submit', (e) => {
     e.preventDefault();
+    if(signupForm['pword'].value.length < 6){
+        alert('Password must be at least 6 characters long!');
+        return;
+    }
+
+    if(signupForm['pword'].value != signupForm['pword2'].value){
+        alert('Repeated Password doesn\'t match password. Please try again');
+        return;
+    }
+
      //get user info
     var e =document.getElementById("uni");
     var f =document.getElementById("branch");
