@@ -1,11 +1,21 @@
+
 <?php
+    include('../templates/db_connect.php');
+
     if(isset($_POST['submit'])){
-        echo $_POST['ux'];
-        echo $_POST['use'];
-        echo $_POST['rel'];
-        echo $_POST['con'];
-        echo $_POST['ux'];
-        echo $_POST['gen'];
+        $ux= $_POST['ux'];
+        $use= $_POST['use'];
+        $rel= $_POST['rel'];
+        $con= $_POST['con'];
+        $gen= $_POST['gen'];
+
+        $sql="INSERT INTO feedback(ux,academics,content,connect,gen) VALUES('$ux','$use','$rel','$con','$gen')";
+
+        if(mysqli_query($conn, $sql)){
+            header('Location: feedback.php');
+        }else{
+            echo 'query error:' . mysqli_error($conn);
+        }
     }
 ?>
 <!DOCTYPE html>
@@ -20,12 +30,12 @@
     </head>
         <?php require('../templates/header.php'); ?>
             <div class="container">
+                <h3>Feedback Form</h3>                    
                 <div id="fbform">
-                        <h3>Feedback Form</h3>                    
                         <form action="feedback.php" method="POST" id="ff">
                             <b>Please provide a honest feedback of the site</b>
                             <br><br>
-                            <label>General User Experience</label>
+                            <label>General User Experience</label>&emsp;
                             <input type="radio" value="1" name="ux">1
                             &nbsp;
                             <input type="radio" value="2" name="ux">2
@@ -37,7 +47,7 @@
                             <input type="radio" value="5" name="ux">5
                             &nbsp;
                             <br><br>
-                            <label>Usefulness in academics</label>
+                            <label>Usefulness in academics</label>&emsp;
                             <input type="radio" value="1" name="use">1
                             &nbsp;
                             <input type="radio" value="2" name="use">2
@@ -49,7 +59,7 @@
                             <input type="radio" value="5" name="use">5
                             &nbsp;
                             <br><br>
-                            <label>Content Relevance</label>
+                            <label>Content Relevance</label>&emsp;&nbsp;&emsp;&emsp;&nbsp;
                             <input type="radio" value="1" name="rel">1
                             &nbsp;
                             <input type="radio" value="2" name="rel">2
@@ -61,7 +71,7 @@
                             <input type="radio" value="5" name="rel">5
                             &nbsp;
                             <br><br>
-                            <label>Connectivity</label>
+                            <label>Connectivity</label>&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;
                             <input type="radio" value="1" name="con">1
                             &nbsp;
                             <input type="radio" value="2" name="con">2
@@ -75,9 +85,9 @@
                             <br><br>
                             General Feedback(With in 50 words):
                             <br>
-                            <textarea maxlength="50" name="gen" rows="3" placeholder="Enter"></textarea>
+                            <textarea maxlength="50" name="gen" rows="3" cols="45" placeholder="Enter feedback"></textarea>
                             <br>
-                            <input type="submit" value="Submit" name="submit" class="btn btn-primary">
+                            <input type="submit" value="Submit" style="margin:10px 120px"  name="submit" class="btn btn-primary">
             
                         </form>
                     

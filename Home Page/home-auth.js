@@ -1,3 +1,5 @@
+const adminItems = document.querySelectorAll('.admin');
+const adminForm = document.querySelector('.admin-actions');
 
 const logout=document.querySelector('#logout');
 var id;
@@ -8,12 +10,25 @@ logout.addEventListener('click', (e) => {
     })
 });
 
+const setupUI = (user) =>{
+    if(user){
+        if(user.admin){
+            adminItems.forEach(item => item.removeAttribute("class"));
+        }
+    } else{
+        adminItems.forEach(item => item.style.display = "none");
+    }
+}
 
 auth.onAuthStateChanged(user =>{
     if(user){
-        const user=document.querySelector('#sb-user');
+        user.getIdTokenResult().then(idTokenResult => {
+            user.admin=idTokenResult.claims.admin;
+            setupUI(user);
+        })    
+
         function renderUser(doc){
-            //const user=document.querySelector('#sb-user');
+            const user=document.querySelector('#sb-user');
             user.textContent=doc.data().username;
             id=doc.id;
             db.collection('users').doc(id).update({
@@ -25,9 +40,10 @@ auth.onAuthStateChanged(user =>{
             snapshot.docs.forEach(doc=>{
                 renderUser(doc);
             });
-        });        
+        });
     }
     else{
+        setupUI(user);
         console.log("setting offline");
         db.collection('users').doc(id).update({
             status:"offline"
