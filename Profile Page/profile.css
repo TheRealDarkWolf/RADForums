@@ -155,6 +155,15 @@ ul .nav-op{
     margin:0;
     border-bottom: 2px solid rgba(255, 255, 255, .5);
 }
+
+#navbar ul li:hover ul .admin{
+    display:none;
+}
+
+.admin{
+    display:none;
+}
+
 .user-bar{
     display:flex;
     margin:10px;
@@ -260,11 +269,16 @@ ul .nav-op{
 }
 div #profile-top{
     margin:0 auto;
-    width:500px;
-    height:100px;
+    width:900px;
+    height:150px;
     font-family:'Montserrat';
     font-size:24px;
     margin-bottom:80px;
+    padding:20px;
+    border-bottom:1px solid black;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
 }
 
 #profile-top #img{
@@ -278,7 +292,7 @@ div #profile-top{
 }
 
 #profile-bottom{
-    margin:0 auto;
+    margin:0 380px;
     width:600px;
 }
 #profile-bottom p{

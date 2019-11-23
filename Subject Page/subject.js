@@ -1,3 +1,4 @@
+const adminItems = document.querySelectorAll('.admin');
 //logout,login and Change username of the search bar
 
 const logout=document.querySelector('#logout');
@@ -8,9 +9,22 @@ logout.addEventListener('click', (e) => {
         console.log('user signed out');
     })
 });
+const setupUI = (user) =>{
+    if(user){
+        if(user.admin){
+            adminItems.forEach(item => item.removeAttribute("class"));
+        }
+    } else{
+        adminItems.forEach(item => item.style.display = "none");
+    }
+}
 
 auth.onAuthStateChanged(user =>{
     if(user){
+        user.getIdTokenResult().then(idTokenResult => {
+            user.admin=idTokenResult.claims.admin;
+            setupUI(user);
+        })    
         function renderUser(doc){
             const user=document.querySelector('#sb-user');
             user.textContent=doc.data().username;
@@ -27,6 +41,7 @@ auth.onAuthStateChanged(user =>{
         });        
     }
     else{
+        setupUI(user);
         console.log("setting offline");
         db.collection('users').doc(id).update({
             status:"offline"
@@ -124,11 +139,4 @@ var storageRef=storage.ref();
 var arr=[];
 var h=document.getElementById("subject-title");
 var str=h.innerHTML;
-storageRef.child("pdfs/"+str.substring(str.length-9,)).list({ maxResults:3}).then(function(res){res.items.forEach(function(itemref){itemref.getDownloadURL().then(function(url){arr.push(url)}).then(function(){
-storageRef.child("pdfs/"+str.substring(str.length-9,)).list({maxResults:3}).then(function(res){
-    res.items.forEach(function(itemref){
-        var dl=arr.pop();
-        console.log(dl);
-        uploadview(str.substring(str.length-9,),itemref.name.substring(0,itemref.name.length-4),dl);
-    })
-})})})});
+storageRef.child("pdfs/"+str.substring(str.length-9,)).list({ maxResults:3}).then(function(res){res.items.forEach(function(itemref){itemref.getDownloadURL().then(function(url){uploadview(str.substring(str.length-9,),itemref.name.substring(0,itemref.name.length-4),url);})})});

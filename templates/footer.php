@@ -2,7 +2,7 @@
                     <p>Switch theme:</p>
                     <div class="redirects" id="icons">
                         <a href=""><i class="fa fa-facebook-f fa-2x"></i></a>
-                        <a href=""><i class="fa fa-github fa-2x"></i></a>
+                        <a href="https://github.com/TheRealDarkWolf/RADForums"><i class="fa fa-github fa-2x"></i></a>
                         <a href=""><i class="fa fa-envelope fa-2x"></i></a>
                     </div>
                     <div class="redirects" id="tc">
@@ -17,6 +17,7 @@
         <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-firestore.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-storage.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-functions.js"></script>
 
         <!-- TODO: Add SDKs for Firebase products that you want to use
         https://firebase.google.com/docs/web/setup#available-libraries -->
@@ -42,6 +43,7 @@
             const auth=firebase.auth();
             const db=firebase.firestore();
             const storage=firebase.storage();
+            const functions=firebase.functions();
         </script>
         <script>
             var preloader=document.getElementById("loader");
