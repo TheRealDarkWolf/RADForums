@@ -13,13 +13,15 @@
             <h3> My Profile </h3>
             <div id="profile-top">
                 <div id="img"></div>
+                <div>
                 <p id="usern"></p>
                 <p id="SRN"></p>
+                </div>
             </div>
             <div id="profile-bottom">
-                <p class="label">Name:</p>&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;
+                <p class="label">Name:</p>&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;
                 <p id="myname" class="value"></p><br/>
-                <p class="label">Email:</p>&emsp;&emsp;&emsp;&emsp;
+                <p class="label">Email:</p>&emsp;&emsp;&emsp;&emsp;&emsp;
                 <p id="email" class="value"></p><br/>
                 <p class="label">Branch:</p>&emsp;&emsp;&emsp;&emsp;
                 <p id="branch" class="value"></p><br/>
@@ -28,6 +30,10 @@
                 <p class="label">University:</p>&emsp;&emsp;
                 <p id="university" class="value"></p><br/>
             </div>
+
+            <form class="admin-actions admin" style="margin: 40px auto; max-width:300px;">
+                <input type="email" placeholder="User email" id="admin-email" required /><br/>
+                <button class="btn">Make admin</button>
         </div>
         <?php require('../templates/footer.php'); ?>
         <script src="profile.js"></script>

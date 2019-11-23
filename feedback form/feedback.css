@@ -155,6 +155,14 @@ ul .nav-op{
     margin:0;
     border-bottom: 2px solid rgba(255, 255, 255, .5);
 }
+#navbar ul li:hover ul .admin{
+    display:none;
+}
+
+.admin{
+    display:none;
+}
+
 .user-bar{
     display:flex;
     margin:10px;
@@ -249,6 +257,14 @@ ul .nav-op{
 
 .container{
     min-height:85vh;
+    margin-bottom:20px;
+}
+
+.container h3{
+    text-align:center;
+    font-family:'Montserrat';
+    font-weight:700;
+    margin:10px 0 30px 0;
 }
 #bottompage{
     width:100%;

@@ -1,5 +1,5 @@
 const memlist=document.querySelector("#member-list");
-
+const adminItems = document.querySelectorAll('.admin');
 function renderUser(doc){
     let li=document.createElement('li');
     li.setAttribute("class", "list-group-item list-group-item-light")
@@ -52,9 +52,22 @@ logout.addEventListener('click', (e) => {
 });
 
 //Login, logout and Update the username in search bar
+const setupUI = (user) =>{
+    if(user){
+        if(user.admin){
+            adminItems.forEach(item => item.removeAttribute("class"));
+        }
+    } else{
+        adminItems.forEach(item => item.style.display = "none");
+    }
+}
 
 auth.onAuthStateChanged(user =>{
     if(user){
+        user.getIdTokenResult().then(idTokenResult => {
+            user.admin=idTokenResult.claims.admin;
+            setupUI(user);
+        })    
         function renderUser(doc){
             const user=document.querySelector('#sb-user');
             user.textContent=doc.data().username;
@@ -71,6 +84,7 @@ auth.onAuthStateChanged(user =>{
         });        
     }
     else{
+        setupUI(user);
         console.log("setting offline");
         db.collection('users').doc(id).update({
             status:"offline"

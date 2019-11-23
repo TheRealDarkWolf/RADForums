@@ -146,6 +146,13 @@ ul .nav-op{
     margin:0;
     border-bottom: 2px solid rgba(255, 255, 255, .5);
 }
+#navbar ul li:hover ul .admin{
+    display:none;
+}
+.admin{
+    display:none;
+}
+
 .user-bar{
     display:flex;
     margin:10px;

@@ -34,6 +34,7 @@
                                     <li><a href="../About Us/aboutus.php">ABOUT US</a></li>
                                     <li><a>REPORT A BUG</a></li>
                                     <li><a href="../feedback form/feedback.php">FEEDBACK FORM</a></li>
+                                    <li class="admin"><a href="../feedback form/viewfeedback.php">VIEW FEEDBACK</a></li>
                                 </ul>
                             </li>
                             <li class="nav-op"><a>OTHER FORUMS</a>
