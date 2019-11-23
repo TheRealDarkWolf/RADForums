@@ -85,7 +85,7 @@ fileButton.addEventListener('change' , function(e){
 
 
 //loading the recent files in the divbox
-function uploadview(subject,filename,dllink){
+function uploadview(subject,filename,type,dllink){
     if(dllink === undefined)
         return;
     
@@ -101,27 +101,28 @@ function uploadview(subject,filename,dllink){
             p1.attr("class","card-text");//p1.setAttribute("class","card-text");
             let p2=$(document.createElement('p'))//let p2=document(document.createElementElement('p');
             p2.attr("class","card-text");//p2.setAttribute("class","card-text");
-            let a1=$(document.createElement('a'));//let a1=document(document.createElementElement('a');
-            a1.attr("class", "btn btn-primary");//a1.setAttribute("class", "btn btn-primary");
-            a1.text('View File');//a1.textContent="View File";
+            let a1=document.createElement('a');
+            a1.setAttribute("class", "btn btn-primary");
+            a1.textContent="View File";
             let a2=$(document.createElement('a'));//let a2=document(document.createElementElement('a');
             a2.attr("class", "btn btn-primary");//a2.setAttribute("class", "btn btn-primary");
             a2.text('Download');//a2.textContent="Download";
             div1.text(subject);//div1.textContent=subject;
             div2.html("<h5 class='card-title'>"+filename+"</h5>")//div2.innerHTML="<h5 class='card-title'>"+filename+"</h5>";
-            p2.text("Uploaded By: Danish Ebadulla");//p2.textContent="Uploaded By: Danish Ebadulla";
-            p1.text("0 minutes ago")//p1.textContent="0 minutes ago"
-            p1.attr("style","float:right");//p1.setAttribute("style","float:right");
-            a2.attr("href",dllink);//a2.setAttribute("href",dllink);
+            p2.text("File Type:"+ type.toUpperCase());//p2.textContent="Uploaded By: Danish Ebadulla";
+            p2.attr("style","text-align:center");//p1.setAttribute("style","float:right");
+                                            //a2.setAttribute("href",dllink);
+            a1.href=dllink;
             
         
-        
-    var xhr = new XMLHttpRequest();
+        var xhr = new XMLHttpRequest();
     xhr.responseType = 'blob';
     xhr.onload = function(event) {
         let blob = xhr.response;
-        a2.href = URL.createObjectURL(blob);
-        a2.download = filename;
+        //a2.href = URL.createObjectURL(blob);
+        a2.attr("href",URL.createObjectURL(blob))
+        //a2.download = filename;
+        a2.attr("download",filename);
     };
     
     xhr.open('GET', dllink);
@@ -139,4 +140,4 @@ var storageRef=storage.ref();
 var arr=[];
 var h=document.getElementById("subject-title");
 var str=h.innerHTML;
-storageRef.child("pdfs/"+str.substring(str.length-9,)).list({ maxResults:3}).then(function(res){res.items.forEach(function(itemref){itemref.getDownloadURL().then(function(url){uploadview(str.substring(str.length-9,),itemref.name.substring(0,itemref.name.length-4),url);})})});
+storageRef.child("pdfs/"+str.substring(str.length-9,)).list({ maxResults:3}).then(function(res){res.items.forEach(function(itemref){itemref.getDownloadURL().then(function(url){uploadview(str.substring(str.length-9,),itemref.name.substring(0,itemref.name.length-4),itemref.name.substring(itemref.name.length-3,itemref.name.length),url);})})});

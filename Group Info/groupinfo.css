@@ -42,6 +42,9 @@ body{
     animation-direction: normal;
 }
 
+#loader p{
+    font-family:'Montserrat';
+}
 @-webkit-keyframes loading {
 from { transform: rotate(0deg);}
 to {transform:rotate(360deg);}
