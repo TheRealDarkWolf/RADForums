@@ -89,30 +89,33 @@ function uploadview(subject,filename,dllink){
     if(dllink === undefined)
         return;
     
-    var divbox=document.getElementById("upload-container");
-    let div=document.createElement('div');
-    div.setAttribute("class","card");
-    let div1=document.createElement('div');
-    div1.setAttribute("class","card-header");
-    let div2=document.createElement('div');
-    div2.setAttribute("class","card-body");
-    let p1=document.createElement('p');
-    p1.setAttribute("class","card-text");
-    let p2=document.createElement('p');
-    p2.setAttribute("class","card-text");
-    let a1=document.createElement('a');
-    a1.setAttribute("class", "btn btn-primary");
-    a1.textContent="View File";
-    let a2=document.createElement('a');
-    a2.setAttribute("class", "btn btn-primary");
-    a2.textContent="Download";
-    div1.textContent=subject;
-    div2.innerHTML="<h5 class='card-title'>"+filename+"</h5>";
-    p2.textContent="Uploaded By: Danish Ebadulla";
-    p1.textContent="0 minutes ago"
-    p1.setAttribute("style","float:right");
-    a1.setAttribute("href",dllink);
-
+    
+            //var divbox=document.getElementById("upload-container");
+            var div=$(document.createElement('div'));//let div=document(document.createElementElement('div');
+            div.attr("class","card")//div.setAttribute("class","card");
+            div1=$(document.createElement('div'));//let div1=document(document.createElementElement('div');
+            div1.attr("class","card-header");//div1.setAttribute("class","card-header");
+            var div2=$(document.createElement('div'));  //let div2=document(document.createElementElement('div');
+            div2.attr("class","card-body");//div2.setAttribute("class","card-body");
+            let p1=$(document.createElement('p'))//let p1=document(document.createElementElement('p');
+            p1.attr("class","card-text");//p1.setAttribute("class","card-text");
+            let p2=$(document.createElement('p'))//let p2=document(document.createElementElement('p');
+            p2.attr("class","card-text");//p2.setAttribute("class","card-text");
+            let a1=$(document.createElement('a'));//let a1=document(document.createElementElement('a');
+            a1.attr("class", "btn btn-primary");//a1.setAttribute("class", "btn btn-primary");
+            a1.text('View File');//a1.textContent="View File";
+            let a2=$(document.createElement('a'));//let a2=document(document.createElementElement('a');
+            a2.attr("class", "btn btn-primary");//a2.setAttribute("class", "btn btn-primary");
+            a2.text('Download');//a2.textContent="Download";
+            div1.text(subject);//div1.textContent=subject;
+            div2.html("<h5 class='card-title'>"+filename+"</h5>")//div2.innerHTML="<h5 class='card-title'>"+filename+"</h5>";
+            p2.text("Uploaded By: Danish Ebadulla");//p2.textContent="Uploaded By: Danish Ebadulla";
+            p1.text("0 minutes ago")//p1.textContent="0 minutes ago"
+            p1.attr("style","float:right");//p1.setAttribute("style","float:right");
+            a2.attr("href",dllink);//a2.setAttribute("href",dllink);
+            
+        
+        
     var xhr = new XMLHttpRequest();
     xhr.responseType = 'blob';
     xhr.onload = function(event) {
@@ -129,7 +132,7 @@ function uploadview(subject,filename,dllink){
     div2.append(a1);
     div2.append(a2);
     div.append(div2);
-    divbox.append(div);
+   $('#upload-container').append(div);
 }
 
 var storageRef=storage.ref();

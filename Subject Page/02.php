@@ -14,11 +14,11 @@
             <div class="container">
                 <div class="left-container">
                     <div id="info-block">
-                        <h3>IMPORTANT DATES</h3>
-                        <p>ISA-1:</p>
-                        <p>ISA-2:</p>
-                        <p>ESA:</p>
-                        <p>ASSIGNMENT WEEK:</p>
+                    <h3>IMPORTANT DATES</h3>
+                        <p>ISA-1: Completed in September</p>
+                        <p>ISA-2: Completed on 8 November</p>
+                        <p>ESA: To begin on 27 November</p>
+                        <p>ASSIGNMENT WEEK: 17 November to 23 November</p>
                     </div>
                     <div class="thread uploads">
                         <h3>LATEST UPLOADS IN UE18CS202</h3>
@@ -72,9 +72,9 @@
                 <div class="right-container">
                     <div id="upcoming">
                         <h3>SUBJECT DETAILS</h3>
-                        <p>COURSE CODE: UE18CS205</p>
+                        <p>COURSE CODE: UE18CS202</p>
                         <p>SEMESTER: 3</p>
-                        <p>ANCHOR: ----</p>
+                        <p>ANCHOR: Vandana M</p>
                     </div>
                     
                     <div id="new-thread">

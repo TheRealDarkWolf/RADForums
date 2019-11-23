@@ -14,11 +14,11 @@
             <div class="container">
                 <div class="left-container">
                     <div id="info-block">
-                        <h3>IMPORTANT DATES</h3>
-                        <p>ISA-1:</p>
-                        <p>ISA-2:</p>
-                        <p>ESA:</p>
-                        <p>ASSIGNMENT WEEK:</p>
+                    <h3>IMPORTANT DATES</h3>
+                        <p>ISA-1: Completed in September</p>
+                        <p>ISA-2: Completed on 8 November</p>
+                        <p>ESA: To begin on 27 November</p>
+                        <p>ASSIGNMENT WEEK: 17 November to 23 November</p>
                     </div>
                     <div class="thread uploads">
                         <h3>LATEST UPLOADS IN UE18CS204</h3>
@@ -72,9 +72,9 @@
                 <div class="right-container">
                     <div id="upcoming">
                         <h3>SUBJECT DETAILS</h3>
-                        <p>COURSE CODE: UE18CS205</p>
+                        <p>COURSE CODE: UE18CS204</p>
                         <p>SEMESTER: 3</p>
-                        <p>ANCHOR: ----</p>
+                        <p>ANCHOR: Vidhu Rojit</p>
                     </div>
                     
                     <div id="new-thread">
@@ -105,6 +105,7 @@
         <script src="subject.js"></script>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="subject.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
